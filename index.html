@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
 <div class="login">
@@ -34,19 +35,22 @@
         <div class="login_title"><h3>请正确填写信息，核实身份</h3></div>
         <div class="login_contant">
             <div class="login_contant_name">
-                <p>姓名:</p>
-                <p>*</p>
-                <input type="text" value="" placeholder="请输入你的姓名">
+                <p style="width: 51.68px">姓名:</p>
+                <p class="star">*</p>
+                <input class="name" type="text" value="" placeholder="请输入你的姓名">
+                <i class="fa fa-check-square"></i>
             </div>
             <div class="login_contant_phone">
                 <p>手机号:</p>
-                <p>*</p>
-                <input type="text" value="" placeholder="请输入你的手机号">
+                <p class="star">*</p>
+                <input class="phone" type="text" value="" placeholder="请输入你的手机号">
+                <i class="fa fa-check-square"></i>
             </div>
             <div class="login_contant_code">
                 <p>验证码:</p>
-                <p>*</p>
-                <input type="text" value="" placeholder="请输入你的验证码" style="width: 160px">
+                <p class="star">*</p>
+                <input class="code" type="text" value="" placeholder="请输入你的验证码" style="width: 160px">
+                <i class="fa fa-check-square"></i>
                 <button class="login_contant_phone_code1">发送</button>
                 <button class="login_contant_phone_code2">60s</button>
             </div>
@@ -56,24 +60,12 @@
 
     <!--下一步-->
     <div class="login_bottom">
-        <a href="loginTwo.html"><button class="login_bottom_button">下一步</button></a>
+        <a href="loginTwo.html" class="login_a"><button class="login_bottom_button">下一步</button></a>
     </div>
 
 </div>
 <script>
-    $(function () {
-        $("input").removeAttr("disabled");
-        $(".login_contant_phone_code2").hide();
-        var login_Tab_li=$(".login_Tab ul ").find("li");
 
-         // 验证
-       $(".login_contant_phone_code1").click(function () {
-           $(".login_contant_phone_code1").hide();
-           $(".login_contant_phone_code2").show();
-       })
-
-
-    })
 </script>
 </body>
 </html>
