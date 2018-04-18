@@ -46,84 +46,17 @@
             <div class="login_contant_code">
                 <p>验证码:</p>
                 <p>*</p>
-                <input type="text" value="" placeholder="请输入你的验证码">
+                <input type="text" value="" placeholder="请输入你的验证码" style="width: 160px">
                 <button class="login_contant_phone_code1">发送</button>
                 <button class="login_contant_phone_code2">60s</button>
             </div>
         </div>
     </div>
-    <!--手机验证结束-->
-    <!--完善信息-->
-    <div class="loginTwo">
-        <div class="loginTwo_contant">
-            <div class="loginTwo_contant_from">
-                <p>姓名:</p>
-                <p>*</p>
-                <input type="text" value="" placeholder="请输入你的姓名">
-            </div>
-            <div class="loginTwo_contant_from">
-                <p>公司:</p>
-                <p>*</p>
-                <input type="text" value="" placeholder="请输入你的公司">
-            </div>
-            <div class="loginTwo_contant_from">
-                <p>职务:</p>
-                <p>*</p>
-                <input type="text" value=""  placeholder="请输入你的职务">
-            </div>
-            <div class="loginTwo_contant_from" >
-                <p>手机号:</p>
-                <p style="margin-left: 15px">*</p>
-                <input type="text" value=""  placeholder="请输入你的手机号">
-            </div>
-            <div class="loginTwo_contant_from">
-                <p>邮箱:</p>
-                <p>*</p>
-                <input type="text" value=""  placeholder="请输入你的邮箱">
-            </div>
-        </div>
-    </div>
-    <!--完善信息结束-->
-    <!--登记成功-->
-    <div class="login_Show ">
-        <div class="login_Show_top">
-            <span><i class="fa fa-fast-forward"></i></span>
-            <span><button class="login_Show_button">请选择秀场<i class="fa fa-hand-o-up"></i></button></span>
-            <span><i class="fa fa-fast-backward"></i></span>
-        </div>
-        <div class="login_Show_contant">
-            <ul>
-                <li>
-                    <p>恭喜你已完成中原国际时装周观众预登记及秀场报名快点击屏幕右上角按钮分享给你的朋友</p>
-                </li>
-                <li>
-                    <P><strong style="color: red">时间：</strong>2018 年 4 月 18 日</P>
-                    <P><strong style="color: red">地点：</strong>中原国际时装秀场</P>
-                </li>
-                <li>
-                    <p>预登记成功</p>
-                </li>
-                <li>
-                    <p>温馨提示：审核通过后</p>
-                </li>
-                <li>
-                    <p>票务联系人：</p>
-                    <p>汤小姐：123456789</p>
-                </li>
-                <li>
-                    <a href="">点击查看已预约的秀场</a>
-                </li>
-            </ul>
-        </div>
+    <!--手机验证结束--
 
-    </div>
-    <!--登记成功结束-->
     <!--下一步-->
     <div class="login_bottom">
-        <button class="login_bottom_button">下一步</button>
-    </div>
-    <div class="login_bottom_1">
-        <button class="login_bottom_button1">下一步</button>
+        <a href="loginTwo.html"><button class="login_bottom_button">下一步</button></a>
     </div>
 
 </div>
@@ -131,9 +64,6 @@
     $(function () {
         $("input").removeAttr("disabled");
         $(".login_contant_phone_code2").hide();
-        $(".loginTwo").hide();
-        $(".login_bottom_1").hide();
-        $(".login_Show").hide();
         var login_Tab_li=$(".login_Tab ul ").find("li");
 
          // 验证
@@ -141,24 +71,6 @@
            $(".login_contant_phone_code1").hide();
            $(".login_contant_phone_code2").show();
        })
-        // 下一步跳转
-        $(".login_bottom_button").click(function () {
-            $(".login_Tab_1").removeClass("login_Tab_color")
-             $(".login_Tab_2").addClass("login_Tab_color")
-            $(".loginOne").hide();
-            $(".loginTwo").show();
-            $(".login_bottom").hide();
-            $(".login_bottom_1").show();
-
-        })
-        $(".login_bottom_button1").click(function () {
-            $(".login_Tab_2").removeClass("login_Tab_color");
-            $(".login_Tab_3").addClass("login_Tab_color");
-            $(".loginTwo").hide();
-            $(".login_Show").show();
-            $(".login_bottom_1").hide();
-        })
-
 
 
     })

@@ -90,6 +90,8 @@ body{
     margin-top: 15px;
     display: inline-block;
     float: right;
+    margin-right: 10px;
+    border-radius: 5px 5px;
 }
 /*信息完善*/
 .loginTwo_contant_from {
@@ -121,6 +123,9 @@ body{
 .login_bottom{
     width: 100%;
 }
+.login_bottom a{
+    text-decoration: none;
+}
 .login_bottom button{
     display: block;
     margin: 0 auto;
@@ -137,6 +142,9 @@ body{
 }
 .login_bottom_1{
     width: 100%;
+}
+.login_bottom_1 a{
+    text-decoration: none;
 }
 .login_bottom_1 button{
     display: block;
